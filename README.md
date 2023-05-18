@@ -28,7 +28,15 @@ opengenus script.py contains implementations of various functions to convert, su
 once run successfully, you can use them from your local command line interface. 
 
  ### supported operations are- 
- n1.url to raw_audio\n2.url to summarised_audio\n3.url to raw text\n4.url to summarised text\n5.text to audio\n6.text to summary\n7.audio to video\n8.Translate text
+ 1.url to raw_audio
+ 2.url to summarised_audio
+ 3.url to raw text
+ 4.url to summarised text
+ 5.text to audio
+ 6.text to summary
+ 7.audio to video
+ 8.Translate text.
+ 
  ### keywords -
 "URL","text","audio","summarised audio", "text","translated text", "summarised text", "video"
  
