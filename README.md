@@ -5,7 +5,7 @@
 2. Download and run the .ipynb file
 3. the output audio shall be saved at your working directory.
 
-# the following content is for opengenus script.py
+# the following content is for opengenus script 27 may.py
 
 ## dependencies
 please ensure that these libraries are installed, updated and usable in your environment.
@@ -16,11 +16,12 @@ please ensure that these libraries are installed, updated and usable in your env
 5. PlaintextParser from sumy.parsers.plaintext
 6. Tokenizer from sumy.nlp.tokenizers
 7. TextRankSummarizer from sumy.summarizers.text_rank
-8. opencv
-9. ffmpeg
-10. numpy
-11. speech-recognition
-12. Translator and LANGUAGES from googletrans
+8. moviepy
+9. opencv
+10. ffmpeg
+11. numpy
+12. speech-recognition
+13. Translator and LANGUAGES from googletrans
 
 ## how to use 
 opengenus script.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
