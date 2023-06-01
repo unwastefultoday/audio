@@ -3,14 +3,18 @@
 ## dependencies
 please ensure that these libraries mentioed at requirements.text are installed and usable.
 ## how to use 
-opengenus audio.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
+opengenus_convertor.py.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
 
 once run successfully, you can use them from your local command line interface. 
 
  ### supported operations are- 
  **1.url to raw_audio-**
  for availing this use case, run the function url_to_raw_audio through the command line statement - 
- **python opengenus audio.py --from=URL --to=audio**
+ **python opengenus_convertor..py --from=URL --to=audio**
+ Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a>
+ Sample Output - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">converted audio files at the working directory</a>
+ 
+ <br>
  2.url to summarised_audio
  3.url to raw text
  4.url to summarised text
