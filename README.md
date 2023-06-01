@@ -8,20 +8,37 @@ opengenus_convertor.py.py contains implementations of various functions to conve
 once run successfully, you can use them from your local command line interface. 
 
  ### supported operations are- 
- **1.url to raw_audio-**
- for availing this use case, run the function url_to_raw_audio through the command line statement - 
- **python opengenus_convertor..py --from=URL --to=audio**
- Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a>
- Sample Output - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">converted audio files at the working directory</a>
+ **1.url to raw_audio-**<br>
+ for availing this use case, run the function url_to_raw_audio. <br>
+Command Line Statement:  **python opengenus_convertor.py --from=URL --to=audio**<br>
+ Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a><br>
+ Sample Output - <a href ="https://drive.google.com/drive/folders/1HjFOxJ09OoHHtX5823pdThG16tZvytSz">converted audio files at the working directory</a><br><br>
  
- <br>
- 2.url to summarised_audio
- 3.url to raw text
- 4.url to summarised text
- 5.text to audio
- 6.text to summary
- 7.audio to video
- 8.Translate text.
+ **2.url to summarised_audio**<br>
+ for availing this use case, run the function url_to_summarised_audio. <br>
+Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summarised audio**<br>
+ Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a><br>
+ Sample Output - <a href ="https://drive.google.com/drive/folders/1HFpqzDkw6fIHtBRp-4anwmO4qyzjXg0q?usp=sharing">converted and summarised audio files at the working directory</a><br><br>
+ 
+ **3.url to raw text**<br>
+  for availing this use case, run the function url_to_raw_text. <br>
+  Command Line Statement:  **python opengenus_convertor.py --from=URL --to=text**<br>
+  Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a><br>
+  Sample Output - <a href ="https://drive.google.com/drive/folders/18E11QnYvJWz_FTQmBesEbeA6dUH7HlBF?usp=sharing">converted text files at the  working directory</a><br><br>
+  
+ **4.url to summarised text**<br>
+ for availing this use case, run the function url_to_text_summary. <br>
+  Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summarised text**<br>
+  Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a><br>
+  Sample Output - <a href ="https://drive.google.com/drive/folders/1zZprOJk2HTWMW6gIYY-ftuhP51MQpFSO?usp=sharing">converted and summarized text files at the  working directory</a><br><br>
+ **5.text to audio**<br>
+  for availing this use case, run the function url_to_text_summary. <br>
+  Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summarised text**<br>
+  Sample Input - <a href ="https://drive.google.com/file/d/1t4si7wsW58JajoV4IgXXHOngpLCNqJaD/view?usp=sharing">a text file</a><br>
+  Sample Output - <a href ="https://drive.google.com/file/d/12IDa7YrUiqVX_AyZSkd5YPmQROCVnkni/view?usp=sharing">summarised text file</a><br><br>
+ **6.text to summary**<br>
+ **7.audio to video**<br>
+ **8.Translate text**<br>
  
  ### keywords -
 "URL","text","audio","summarised audio", "text","translated text", "summarised text", "video"
