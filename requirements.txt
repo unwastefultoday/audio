@@ -1,0 +1,11 @@
+os
+gTTS
+requests
+beautifulsoup4
+sumy
+moviepy
+opencv-python
+ffmpeg-python
+numpy
+SpeechRecognition
+googletrans==3.1.0a0
