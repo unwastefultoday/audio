@@ -1,7 +1,7 @@
 # audio
 
 ## dependencies
-please ensure that these libraries mentioned at requirements.text are installed and usable.
+please ensure that these libraries mentioned at requirements.txt are installed and usable.
 ## how to use 
 opengenus_convertor.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
 
@@ -53,7 +53,7 @@ Parameters: 2- input_urls_file and output_file_location, both address parameters
   Command Line Statement:  **python opengenus_convertor.py --from=text --to=translated text**<br>
   Sample Input - <a href =" for availing this use case, run the function translate_text_file. <br>
   Sample Input - <a href ="https://drive.google.com/file/d/1wt8azvJ5v8pN0vPeDuB3xwsRRVLkRanO/view?usp=sharing">an input file in english</a><br>
-  Expected Output - <a href ="https://drive.google.com/file/d/1FY5xELOpqqFzgBkZ35w_B2v5TFn_SCCz/view?usp=sharing">translated in french </a><br>   ">
+  Expected Output - <a href ="https://drive.google.com/file/d/1FY5xELOpqqFzgBkZ35w_B2v5TFn_SCCz/view?usp=sharing">translated in french </a><br>   
 
 If converting from text or audio, ensure to write the full name of the output file. Else just mention the directory where the output should be located.
 
