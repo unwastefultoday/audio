@@ -1,9 +1,9 @@
 # audio
 
 ## dependencies
-please ensure that these libraries mentioed at requirements.text are installed and usable.
+please ensure that these libraries mentioned at requirements.text are installed and usable.
 ## how to use 
-opengenus_convertor.py.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
+opengenus_convertor.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
 
 once run successfully, you can use them from your local command line interface. 
 
