@@ -283,7 +283,7 @@ def text_to_summary(input_file,output_file_full_name):
     for sentence in summary:
         text_summary += str(sentence)
     
-    with open(output_file, "w", encoding="utf-8") as text_file:
+    with open(output_file_full_name, "w", encoding="utf-8") as text_file:
         text_file.write(text_summary)
 
 
@@ -477,16 +477,18 @@ elif input_type == 'url' and output_type == 'text':
     url_to_text(input_file,output_data)
 elif input_type == 'url' and output_type == 'summarised text':
      url_to_text_summary(input_file,output_data)
-elif input_type == 'text' and output_type == 'audio':
-    text_to_audio(input_file,output_file)
+elif input_type == 'url' and output_type == 'summary':
+     url_to_text_summary(input_file,output_data)
 elif input_type == 'text' and output_type == 'summary':
+    text_to_summary(input_file,output_file)
+elif input_type == 'text' and output_type == 'summaryised text
     text_to_summary(input_file,output_file)
 elif input_type == 'text' and output_type == 'translated text':
     translate_text_file(input_file,output_file)
 elif input_type == 'audio' and output_type == 'video':
     convert_audio_to_video(input_data)
 else:
-    print('''please enter proper arguements. supported operations-\n1.url to raw_audio\n2.url to summarised_audio\n3.url to raw text\n4.url to summarised text\n5.text to audio\n6.text to summary\n7.audio to video\n8.Translate text''')
+    print('''please enter proper arguements.''')
 
 
 # In[ ]:
