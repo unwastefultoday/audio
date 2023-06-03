@@ -31,14 +31,13 @@ Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summari
   Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summarised text**<br>
   Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a file containing a list of URLs</a><br>
   Sample Output - <a href ="https://drive.google.com/drive/folders/1zZprOJk2HTWMW6gIYY-ftuhP51MQpFSO?usp=sharing">converted and summarized text files at the  working directory</a><br><br>
- **5.text to audio**<br>
-  for availing this use case, run the function url_to_text_summary. <br>
-  Command Line Statement:  **python opengenus_convertor.py --from=URL --to=summarised text**<br>
-  Sample Input - <a href ="https://drive.google.com/file/d/1t4si7wsW58JajoV4IgXXHOngpLCNqJaD/view?usp=sharing">a text file</a><br>
-  Sample Output - <a href ="https://drive.google.com/file/d/12IDa7YrUiqVX_AyZSkd5YPmQROCVnkni/view?usp=sharing">summarised text file</a><br><br>
- **6.text to summary**<br>
- **7.audio to video**<br>
- **8.Translate text**<br>
+ **5.text to summary**<br>
+  for availing this use case, run the function text_to_summary. <br>
+  Command Line Statement:  **python opengenus_convertor.py --from=text --to=summarised text**<br>
+  Sample Input - <a href ="https://drive.google.com/file/d/1jv2acLzs_1Ykm1wwZV-JfhxMzEGGukZr/view?usp=sharing">a text file</a><br>
+  Sample Output - <a href ="https://drive.google.com/drive/folders/1zZprOJk2HTWMW6gIYY-ftuhP51MQpFSO?usp=sharing">summarised content at the  working directory</a><br><br>
+ **6.audio to video**<br>
+ **7.Translate text**<br>
  
  ### keywords -
 "URL","text","audio","summarised audio", "text","translated text", "summarised text", "video"
