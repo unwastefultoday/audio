@@ -1,11 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-import os
 def process_file_path(file_path):
+    import os
     # Convert the file path to an absolute path if it is relative
     if not os.path.isabs(file_path):
         linkingpath = input("Enter full path till BEFORE required location/file separated by double forward slashes: ")
@@ -17,7 +11,6 @@ def process_file_path(file_path):
     return full_file_path
 
 
-# In[2]:
 
 
 def url_to_summarised_audio(input_urls_file,output_file_location):
@@ -88,9 +81,9 @@ def url_to_summarised_audio(input_urls_file,output_file_location):
 # In[5]:
 
 
-input_urls_file="C:\\Users\\Ambarish Deb\\Desktop\\project\\input.txt"
-output_file_location="C:\\Users\\Ambarish Deb\\Desktop"
-url_to_summarised_audio(input_urls_file,output_file_location)
+#input_urls_file="Desktop\\project\\input.txt"
+#output_file_location="Desktop"
+#url_to_summarised_audio(input_urls_file,output_file_location)
 
 
 # In[ ]:
@@ -153,9 +146,9 @@ def url_to_raw_audio(input_urls_file,output_file_location):
 # In[ ]:
 
 
-input_urls_file="C:\\Users\\Ambarish Deb\\Desktop\\project\\input.txt"
-output_file_location="C:\\Users\\Ambarish Deb\\Desktop"
-url_to_raw_audio(input_urls_file,output_file_location)
+#input_urls_file="Desktop\\project\\input.txt"
+#output_file_location="Desktop"
+#url_to_raw_audio(input_urls_file,output_file_location)
 
 
 # In[ ]:
@@ -200,9 +193,9 @@ def url_to_raw_text(input_urls_file, output_file_location):
 # In[ ]:
 
 
-input_urls_file="C:\\Users\\Ambarish Deb\\Desktop\\project\\input.txt"
-output_file_location="C:\\Users\\Ambarish Deb\\Desktop"
-url_to_raw_text(input_urls_file, output_file_location)
+#input_urls_file="Desktop\\project\\input.txt"
+#output_file_location="Desktop"
+#url_to_raw_text(input_urls_file, output_file_location)
 
 
 # In[ ]:
@@ -259,12 +252,12 @@ def url_to_text_summary(input_urls_file,output_file_location):
 # In[ ]:
 
 
-input_urls_file="C:\\Users\\Ambarish Deb\\Desktop\\project\\input.txt"
-output_file_location="C:\\Users\\Ambarish Deb\\Desktop"
-url_to_text_summary(input_urls_file,output_file_location)
+#input_urls_file="Desktop\\project\\input.txt"
+#output_file_location="Desktop"
+#url_to_text_summary(input_urls_file,output_file_location)
 
 
-# In[ ]:
+
 
 
 def text_to_summary(input_file,output_file_full_name):
@@ -287,15 +280,14 @@ def text_to_summary(input_file,output_file_full_name):
         text_file.write(text_summary)
 
 
-# In[ ]:
 
 
-input_file="C:\\Users\\Ambarish Deb\\Desktop\\POS Tagging in NLP using Python raw.txt"
-output_file_full_name="C:\\Users\\Ambarish Deb\\Desktop\\sum.txt"
-text_to_summary(input_file,output_file_full_name)
+
+#input_file="Desktop\\POS Tagging in NLP using Python raw.txt"
+#output_file_full_name="Desktop\\sum.txt"
+#text_to_summary(input_file,output_file_full_name)
 
 
-# In[ ]:
 
 
 get_ipython().system('pip install --upgrade pip')
@@ -325,7 +317,7 @@ get_ipython().system('pip install SpeechRecognition')
 get_ipython().system('pip install moviepy')
 
 
-# In[ ]:
+
 
 
 from moviepy.editor import AudioFileClip, VideoClip,TextClip,CompositeVideoClip
@@ -358,20 +350,20 @@ def convert_audio_to_video(input_file, output_file):
     final_video.write_videofile(output_file, codec='libx264',fps=24)
 
 
-# In[ ]:
+
 
 
 # Example usage
-convert_audio_to_video('C:\\Users\\Ambarish Deb\\Desktop\\Paraphrasing in NLP Summarised.mp3', 'C:\\Users\\Ambarish Deb\\Desktop\\output.mp4')
+#convert_audio_to_video('Desktop\\Paraphrasing in NLP Summarised.mp3', 'Desktop\\output.mp4')
 
 
-# In[ ]:
+
 
 
 get_ipython().system('pip install googletrans')
 
 
-# In[ ]:
+
 
 
 def translate_text_file(input_file, output_file):
@@ -396,10 +388,10 @@ def translate_text_file(input_file, output_file):
         file.write(translated_text.text)
 
 # Example usage
-translate_text_file('input.txt', 'output.txt')
+#translate_text_file('input.txt', 'output.txt')
 
 
-# In[ ]:
+
 
 
 import cv2
@@ -438,7 +430,7 @@ def convert_audio_to_video(input_file, output_file):
     writer.release()
 
 # Example usage
-convert_audio_to_video('C:\\Users\\Ambarish Deb\\Desktop\\POS Tagging in NLP using Python summarised.mp3', 'C:\\Users\\Ambarish Deb\\Desktop\\output+text.mp4')
+#convert_audio_to_video('Desktop\\POS Tagging in NLP using Python summarised.mp3', '\Desktop\\output+text.mp4')
 
 
 # In[ ]:
@@ -491,7 +483,7 @@ else:
     print('''please enter proper arguements.''')
 
 
-# In[ ]:
+
 
 
 
