@@ -2,6 +2,9 @@
 
 ## dependencies
 please ensure that these libraries mentioned at requirements.txt are installed and usable.
+
+## addressing mode
+Both relative and absolute addresses are supported, due to the use of the process_address function. However, the route from the root directory to the working folder will need to be established if relative addressing is used. 
 ## how to use 
 opengenus_convertor.py contains implementations of various functions to convert, summarise and translate data and to make these functions usable by command line.
 
