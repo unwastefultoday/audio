@@ -1,0 +1,302 @@
+POS Tagging in NLP using Python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&times
+
+
+
+
+
+&times
+
+
+
+
+
+
+
+
+
+
+
+☰
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+×
+
+Search anything:
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+POS Tagging in NLP using Python
+
+
+
+
+
+
+
+
+
+
+
+More
+Less
+
+Up
+
+
+
+
+
+
+
+
+
+Indian Technical Authorship Contest starts on 1st July 2023. .
+
+
+
+Introduction
+In most, if not all spoken and written languages, each word is grouped into a certain category according to it's syntactic functions. These categories are known as "Parts of Speech" (POS), each category containing words of similar nature.
+In English, there are eight main parts of speech, in no particular order:
+
+
+
+
+
+
+
+
+
+
+In addition to these eight parts of speech, there are several other parts of speech that are less commonly used, including articles, determiners, quantifiers etc.
+After this refresher on Parts Of Speech, we can move on to the next section, that is understanding POS tagging.
+Understanding POS Tagging
+POS tagging is a text preprocessing task within the ambit of Natural Language Processing (NLP) whose goal is to analyze the syntactic structure of a given sentence and to understand the input text in a better manner. It is mainly used to match each word of a sentence to it's corresponding part of speech. On passing a phrase to a POS tagging algorithm, a list of tuples shall be returned, each tuple containing a word of the sentence and it's corresponding part of speech. For example, passing the phrase "He runs fast" to a POS tagging algorithm shall return [(He, pronoun),(runs, verb),(fast,adverb)] or something to a similar effect.
+Now that we have a basic idea about POS tagging, let's have a look at its use cases.
+Text classification:  POS tags may be employed as features in text classification models. By analyzing the POS tags of the words in a text, algorithms can better understand the content and tone of the text, making it useful in tasks such as spam classification and  sentiment analysis.
+Named entity recognition (NER): To identify and classify named entities like individuals,institutions, and locations, POS tags can be employed as a pre-processing step. This is useful for tasks such as extracting data from news articles or building knowledge bases for AI systems.
+Machine translation: POS tagging can be used to translate texts from one language to another by recognising the grammatical relationships and word associations in the source language and mapping them to the target language.
+Speech recognition: POS tags can be used to increase the precision of speech recognition systems by differentiating between words that sound similar but belong to different parts of speech categories. Eg. steel and steal.
+Now that we're familiar with the use cases of POS tagginh, let's have a look at the various methods to implement POS tagging in python.
+Implementing POS tagging in Python
+Manual approach
+First of all, let's try a manual approach towards POS tagging in python. For this, we shall be using the wordnet module imported from nltk. To install wordnet, run these 2 lines of code in your notebook.
+
+Alternatively, you can also type !pip install wordnet in your notebook and wait for the module to install.
+The manual algorithm will have the following steps-
+
+Let's go through the manual method step-by-step.
+Define lists for all parts of speeches
+
+As can be seen, all possible words in all major parts of speech except conjunctions and pronouns were extracted from the wordnet module. Lists for conjunction and pronouns were created manually using web based resources as listed in the code.
+Define a dictionary of POS tag mappings and the sentence to be tagged.
+
+This dictionary maps a label to each list. Do note that these labels would be the final output for each word in the sentence. The sentence to be tagged is also defined.
+Create a function to split the sentence into a list of words and assign a tag to each word.
+
+This function splits the given sentence into a list of word and maps each word to a part of speech. if no suitable match is found, the word is assigned 'noun' as a default part of speech.
+
+On executing this function on the sentence variable, this is the observed result.
+
+Athough this code is able to tag the words properly, there may be edge cases which may cause improper results. Other than that, this is quite a lengthy method for POS tagging, so let's have a look at a few low code alternatives.
+Using the nltk library
+One simple option is to use the word_tokenize() and pos_tag() methods in the nltk library, as shown below.
+
+Output-
+
+Here, the abbreviations stand for various parts of speech. Eg. DT stands for determiner, NN for noun, VBZ is a type of a verb, IN stands for preposition and so on. 
+Using Spacy for POS tagging.
+Spacy is another popular Python library for NLP that provides various tools for text processing and analysis, including POS tagging. However, this approach is a bit different than the previous one as unlike nltk, we first need to load a pre-trained language model that includes a POS tagger.
+The most commonly used model is en_core_web_sm, which is a small English model, including a POS tagger, a dependency parser, and a named entity recognizer.
+Here's an example of using Spacy to perform POS tagging:
+
+Output:
+
+Using spacy provides an added advantage of being able to understand the abbreviations by using certain inbuilt methods and not having to refer to documentation for the same as was the case with nltk.
+By now we have had a look at three possible ways of POS tagging using Python. Now let's compare and summarise these methods.
+Comparison of methods
+
+Before wrapping up, let's have a look at a few questions.
+
+Q1) Is POS tagging related to Named Entity Recognition tasks?
+
+
+They are entirely unrelated.
+POS tagging is an example of Named Entity recognition.
+POS tagging is a preprocessing task used to prepare the data for NER.
+Named Entity Recognition is an example of POS tagging.
+
+
+ Yes. POS tagging is a preprocessing task which labels words into their corresponding parts of speech so tht recognizing named entities such as people and places becomes easier.
+
+
+
+Q2) Which library/libraries can import a pre trained model for POS tagging and contain(s) an inbuilt method to do POS tagging?
+
+
+NLTK and spacy can do both tasks.
+Spacy and NLTK respectively.
+NLTK can do both but spacy can't.
+Spacy can do both but nltk can't.
+
+
+ Yes. Spacy imports a pre trained model called 'en_core_web_sm' for POS tagging in english while nltk uses the pos_tag() method to perform tagging.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read  by this author.
+
+
+
+
+
+
+
+
+Vote for Author of this article:  
+
+
+Improved & Reviewed by:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ © 2023 All rights
+          reserved ™ [email: ]

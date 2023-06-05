@@ -1,0 +1,283 @@
+Paraphrasing in NLP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&times
+
+
+
+
+
+&times
+
+
+
+
+
+
+
+
+
+
+
+☰
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+×
+
+Search anything:
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Paraphrasing in NLP
+
+
+
+
+
+
+
+
+
+More
+Less
+
+Up
+
+
+
+
+
+
+
+
+
+Indian Technical Authorship Contest starts on 1st July 2023. .
+
+
+
+Introduction
+According to Oxford Dictionary, "to paraphrase" means to express something that somebody has written or said using different words, especially in order to make it easier to understand.
+For example, the phrase
+
+"He went to college and received his bachelor's degree in three years."
+
+can also be represented as
+
+"In three years of college, he earned his bachelor's degree."
+
+This phenomenon is called paraphrasing, wherein the composition of a sentence is changed while keeping it's essence intact.
+Paraphrasing may be done at several levels, including word-level, phrase-level, and sentence-level.
+
+In the context of Natural Language Processing, paraphrasing can have multiple use cases, including but not limited to-
+
+For this article, our aim would be to analyze different paraphrasing algorithms and their implementation in Python.
+Paraphrasing Algorithms
+There are two main approaches when it comes to to paraphrasing in NLP
+
+The former uses semantic rules and linguistic patterns to generate candidate paraphrases, compared to the latter which employs Machine Learning techniques to learn paraphrasing from large datasets. A third hybrid method also exists where rule-based and data-driven methods  work hand in hand to achieve better performance in paraphrasing.
+Before we dive deeper into them, we'll first have a look at a naive algorithm for paraphrasing for the sake of understanding.
+Naive Approach
+
+Implementation
+
+Here, wordnet serves as the base from where the rules to be applied to words are obtained. The sentence is passed to the defined function which generates words from it and then the rules are used to generate candidate paraphrases as is applicable. The most optimal candidate paraphrase is then appended to the new_word list, defined prior to looping.  The final product is the contents of the new_word list, separated by a single space.
+This naive approach is basically a very simplistic example of a rule-based approach wherein the generation of candidate paraphrases are dependent on rules. However it falls short when compared to certain rule based approaches, as it does not account for the context and syntax, which may lead to incorrect outputs. However, this method can provide a simple understanding of what goes on under the hood in rule based algorithms.
+Rule based Algorithms
+In rule based methods, there are multiple approaches, one being replacement of words in a sentence with a synonym that has a similar meaning. For example, the sentence "The dog slept on the mat" can be paraphrased as *"The canine dozed off on the rug" * by replacing dog" with "canine", "slept" with "dozed off" and  "mat" with "rug". This is called synonym replacement and this was illustrated in the naive approach.
+The other approach is implementation through paraphrase templates. Here, we specify a set of transformation rules or templates which are then applied to a given sentence to generate paraphrases. It can be implemented in the follwing manner.
+
+One drawback of this method is that there is no cap on the maximum number of rules needed so that it is able to cater to every sentence possible. Hence, this method is not scalable and therefore, not suitable for real world implementation.
+Data Driven Approaches
+In this approach, we use machine learning models which have been trained on a large corpus of text data to generate paraphrases. For the purpose of this article, we won't be training a model from scratch, but shall be using a pre-trained model to generate outputs.
+We shall use the  library for this purpose.
+The PARROT library is a Python package for text paraphrasing that may be used for multiple NLP applications, including but not limited to text augmentation and data synthesis.It employs a pre-trained neural network that creates paraphrases of the input text, by utilising the capabilities of sequence-to-sequence (Seq2Seq) models.
+It allows a variety of text inputs, including phrases, paragraphs, and full documents. The degree of paraphrasing can be modified by the user through the parameters passed.
+To get started, we'll have to install this library. For this, we can open an instance of the command line with administrator privileges & run the following command-
+python -m pip install git+https://github.com/PrithivirajDamodaran/Parrot.git
+Now we shall open up a python file and begin writing the code.
+We'll first import the Parrot module from the library. After that, we instantiate the model on the local system by downloading the pre-trained model using the parameters specified. It may take some time depending on the speed of the internet connection as the files are quite large in size.
+After that, all that is left to be done is to tokenize the sentence whose paraphrases are needed and use the model to generate the same. The code is as follows.
+
+Output-
+
+Comparing this to the previous approach, it is needless to say that data driven approaches like this provide better output(s) than certain rule based methods. However, as is with many data driven approaches, there is a lack of explainabillity since they rely on ML models which can be difficult to understand. If the models are built from scratch, there is also the risk of running into bias which can cause misleading results.
+Let's have a look at a few questions.
+Questions to consider
+
+Q1)Why do the properly implemented methods show more accuracy than?
+
+
+Context not taken into account.
+Inaccurate results, Large no. of rules needed
+Both may occur 
+Neither
+
+
+While creating a rule based classifier from scratch, the results may not be satisfactory due to less number of rules specified. Moreover, the context of the text is often not taken into consideration. Hence, both are issues which my occur.
+
+
+
+Q2)What are the issues that can occur while using a data driven paraphraser?
+
+
+Opaque model, explainabillity issues
+Bias  and Errors
+Both may occur 
+Neither
+
+
+While creating a data driven paraphraser, esplainabillity issues may arise as interpreting ML models can be quite difficult. Moreover, if the paraphraser is being created from scratch, bias may creep into it causing improper results. Hence both are potential issues which may occur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read  by this author.
+
+
+
+
+
+
+
+
+Vote for Author of this article:  
+
+
+Improved & Reviewed by:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ © 2023 All rights
+          reserved ™ [email: ]
